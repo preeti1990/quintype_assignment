@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  ride: one
+  star_rating: 1.5
+  comment: MyString
+
+two:
+  user: two
+  ride: two
+  star_rating: 1.5
+  comment: MyString

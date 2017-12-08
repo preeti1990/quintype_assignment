@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+#one:
+#  owner_id: one
+#  owner_type: Owner
+#  created_at: DateTime.now
+#  
+#
+#two:
+#  owner_id: two
+#  owner_type: Owner
+#  created_at: DateTime.now

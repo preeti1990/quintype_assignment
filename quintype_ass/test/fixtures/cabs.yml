@@ -1,0 +1,52 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: "cab1"
+  classie_no: "987655"
+  reg_no: "KA03 SF1234"
+  insurance_no: "2123980"
+  model: "Eco"
+  no_of_seats: "1"
+  owner_name: "Preeti"
+  owner_address: "C123 Bellandur"
+  reg_date: 2017-12-07 13:05:28
+  wheels: "Alloy"
+  color: "Gray"
+  active: true
+  fuel: "disel"
+  permit_type: "country"
+  vehicle_type: "prime"
+
+two:
+  name: "cab2"
+  classie_no: "892323"
+  reg_no: "KA02 SF456"
+  insurance_no: "2134567"
+  model: "City"
+  no_of_seats: "1"
+  owner_name: "Richa"
+  owner_address: "ITPL Hoodi"
+  reg_date: 2017-12-07 13:05:28
+  wheels: "Steel"
+  color: "White"
+  active: true
+  fuel: "petrol"
+  permit_type: "state"
+  vehicle_type: "Prime"
+
+three:
+  name: "cab3"
+  classie_no: "892456"
+  reg_no: "KA03 PA456"
+  insurance_no: "2135908"
+  model: "Swift"
+  no_of_seats: "1"
+  owner_name: "Rahul"
+  owner_address: "Mahadevpura"
+  reg_date: 2017-12-09 13:05:28
+  wheels: "Forged"
+  color: "Blue"
+  active: true
+  fuel: "petrol"
+  permit_type: "state"
+  vehicle_type: "Prime"

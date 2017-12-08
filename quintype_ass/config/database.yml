@@ -1,25 +1,63 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  #encoding: utf8mb4
+  #collation: utf8mb4_bin
+  reconnect: false
+  pool: 52
+  timeout: 5000
+
+development:
+  <<: *default
+  database: qunitype_ass_development
+  username: root
+  password: <%=ENV['MYSQL_PSWD']%>
+  host: localhost
+
+test:
+  <<: *default
+  database: quintype_ass_test
+  username: root
+  password: <%=ENV['MYSQL_PSWD']%>
+  host: localhost
+
+production:
+  <<: *default
+  database: quintype_ass_production
+  username: root
+  password: k@@l123
+  host: localhost
+  port: 3306
+  pool: 52
+
+
+
+
+
+
 # SQLite version 3.x
 #   gem install sqlite3
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
-
-development:
-  <<: *default
-  database: db/development.sqlite3
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: db/test.sqlite3
-
-production:
-  <<: *default
-  database: db/production.sqlite3
+#default: &default
+#  adapter: quintype_ass_development
+#  pool: 5
+#  timeout: 5000
+#
+#development:
+#  <<: *default
+#  database: quintype_ass_development
+#
+## Warning: The database defined as "test" will be erased and
+## re-generated from your development database when you run "rake".
+## Do not set this db to the same as development or production.
+#test:
+#  <<: *default
+#  database: quintype_ass_test
+#
+#
+#production:
+#  <<: *default
+#  database: quintype_ass_production

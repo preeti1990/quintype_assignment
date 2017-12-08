@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phone: '919854234567'
+  otp: "1234"
+  avg_user_rating: 1.5
+  experience: "5 years"
+  driving_liscence_no: "sdsfd4567"
+  aadhar_no: "1234-4567-1234"
+  verified: true
+  name: "Mohan"
+
+two:
+  phone: '91962024576'
+  otp: "3456"
+  avg_user_rating: 4.5
+  experience: "7 years"
+  driving_liscence_no: "bnhju1234"
+  aadhar_no: "4567-9078-7856"
+  verified: true
+  name: "Raghav"

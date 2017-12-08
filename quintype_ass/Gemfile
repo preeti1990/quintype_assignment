@@ -51,3 +51,16 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'geocoder'
+gem 'mysql2', '0.3.18'
+
+gem 'sunspot_rails'    # Sunspot (Solr API gem) for Rails
+group :development do
+  gem 'sunspot_solr'   # Pre-built Solr
+end
+group :test do
+  gem 'sunspot_solr'   # Pre-built Solr
+end
+

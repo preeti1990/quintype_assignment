@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ride_time: 2017-12-07 13:48:30
+  amount: 1.5
+  amount_paid: false
+  start_time: 2017-12-07 13:48:30
+  end_time: 2017-12-07 13:48:30
+  source_location_id: 1
+  destination_location_id: 2
+  ride_state: "started"
+  otp: "1234"
+
+two:
+  ride_time: 2017-12-07 13:48:30
+  amount: 1.5
+  amount_paid: false
+  start_time: 2017-12-07 13:48:30
+  end_time: 2017-12-07 13:48:30
+  source_location_id: 1
+  destination_location_id: 1
+  ride_state: "started"
+  otp: "3234"
