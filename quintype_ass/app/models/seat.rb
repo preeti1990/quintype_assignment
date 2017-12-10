@@ -23,8 +23,7 @@ class Seat < ApplicationRecord
       current_distance  = Geocoder::Calculations.distance_between([params[:source_lat], params[:source_lng]], [cab_current_loc.lat, cab_current_loc.lng]) 
       #get distance between 2 points by using geocoder gem
       distance          = Geocoder::Calculations.distance_between([params[:source_lat], params[:source_lng]], [params[:dest_lat], params[:dest_lng]])
-      puts "DEBUG>>> price of type of cab #{type_of_cab.price}"
-      fare              = (distance * (type_of_cab.price)).to_f
+      fare              = (current_distance * (type_of_cab.price)).to_f
 
       cab_details = {seat_id:result.id, vehicle_no: result.cab.reg_no,current_location: cab_current_loc.street_address,distance: current_distance,type_of_cab_name: type_of_cab.name, type_of_cab_id: type_of_cab.id,fare: fare}
       cabs_items.push(cab_details)
@@ -47,9 +46,9 @@ class Seat < ApplicationRecord
       Geocoder::Configuration.timeout = 15
       g_address                       = Geocoder.address("#{params[:source_lat]}, #{params[:source_lng]}")
       address_vals                    = g_address.split(" ")
-      req_city                        = address_vals[3].split(",")[0]
+      req_city                        = address_vals[3].split(",")[0].strip
       puts "req city value is #{req_city}"
-      #with(:cab_city, req_city)
+      with(:cab_city, req_city)
 
       #Seat should be available for booking 
       with :bookable, true

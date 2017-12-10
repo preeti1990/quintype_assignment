@@ -214,6 +214,7 @@ params[:dest_lat] = 12.965413
  
 params[:dest_lng] = 77.714836
 params[:service_type_id] = 2
+params[:service_type_id] = 1 
 Seat.solr_seat_search_results(params)
 
 params = Hash.new
